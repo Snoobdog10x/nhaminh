@@ -4,9 +4,9 @@ require_once("./Class/slider.php");
 class database
 {
     public $servername = "localhost";
-    public $username = "id17862636_admin";
-    public $password = "aqHdq?\-o(Zb0gdT";
-    public $database = "id17862636_nhaminhdb";
+    public $username = "admin";
+    public $password = "thanhanh";
+    public $database = "epiz_30240223_nhaminh";
     public $conn;
     function __construct()
     {
