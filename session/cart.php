@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('Class/OrderItem.php');
 function get_Item($productID, $phoneCom, $phoneModel)
 {
@@ -9,7 +10,6 @@ function get_Item($productID, $phoneCom, $phoneModel)
     }
     return null;
 }
-session_start();
 if (isset($_SESSION['cart'])) {
     //update item
     if (isset($_REQUEST['index']) && isset($_REQUEST['quantity'])) {
