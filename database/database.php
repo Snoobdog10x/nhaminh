@@ -1,8 +1,8 @@
 <?php
-require_once("../Class/product.php");
-require_once("../Class/slider.php");
-require_once("../Class/Order.php");
-require_once("../Class/OrderItem.php");
+require_once("./Class/product.php");
+require_once("./Class/slider.php");
+require_once("./Class/Order.php");
+require_once("./Class/OrderItem.php");
 class database
 {
     public $servername = "localhost";
