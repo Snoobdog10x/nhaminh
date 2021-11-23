@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th10 23, 2021 lúc 10:25 AM
+-- Thời gian đã tạo: Th10 23, 2021 lúc 03:49 PM
 -- Phiên bản máy phục vụ: 10.3.31-MariaDB-0+deb10u1
 -- Phiên bản PHP: 7.3.31-1~deb10u1
 
@@ -22,6 +22,37 @@ SET time_zone = "+00:00";
 DROP DATABASE IF EXISTS `epiz_30240223_nhaminh`;
 CREATE DATABASE IF NOT EXISTS `epiz_30240223_nhaminh` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `epiz_30240223_nhaminh`;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `CustomerOrder`
+--
+
+CREATE TABLE IF NOT EXISTS `CustomerOrder` (
+  `ID` varchar(20) NOT NULL,
+  `CustomerName` text CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `PhoneNumber` text CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `Address` text CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `Status` text CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `Date` date NOT NULL,
+  `Total` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `ItemOrder`
+--
+
+CREATE TABLE IF NOT EXISTS `ItemOrder` (
+  `ID` varchar(20) NOT NULL,
+  `PhoneCom` text CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `PhoneModel` text CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Quantity` int(11) NOT NULL,
+  `Price` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
