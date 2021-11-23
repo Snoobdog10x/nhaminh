@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('./Class/OrderItem.php');
+require_once("../Class/OrderItem.php");
 function get_Item($productID, $phoneCom, $phoneModel)
 {
     foreach ($_SESSION['cart'] as $item) {
