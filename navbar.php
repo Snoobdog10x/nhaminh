@@ -2,9 +2,9 @@
 <html>
 <title>Nhà Mình</title>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://nhaminhbanduthu.000webhostapp.com/"/>
+<meta property="og:url" content="https://nhaminhbanduthu.ddns.net/"/>
 <meta property="og:description" content="A website where you can buy a cute phone case"/>
-<meta property="og:image" content="https://nhaminhbanduthu.000webhostapp.com/WEB1/ANHNEN/ava.jpg"/>
+<meta property="og:image" content="https://nhaminhbanduthu.ddns.net/IMG/TRANGCHU/ava.jpg"/>
 <meta property="og:title" content="nhà mình"/>
 <meta property="og:site_name" content="Nhà Mình" />
 <meta property="fb:app_id" content="473024653970714" />
