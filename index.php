@@ -1,11 +1,12 @@
-
+<?php
+require('navbar.php');
+?>
 <body class="w3-content" style="max-width:1200px">
 
 
   <!-- Sidebar/menu -->
   <?php
   require_once('database/database.php');
-  require('navbar.php');
   ?>
 
   <!-- Overlay effect when opening sidebar on small screens -->
